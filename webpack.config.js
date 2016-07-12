@@ -24,11 +24,18 @@ module.exports = {
     root: __dirname,
     modulesDirectories: [
       'node_modules',
-      './app/components'
+      './app/components',
+      './app'
     ],
 
     alias: {
-
+      Main: 'app/components/Main.jsx',
+      Navigation: 'app/components/Navigation.jsx',
+      TodoApp: 'app/components/TodoApp.jsx',
+      AddTodo: 'app/components/AddTodo.jsx',
+      About: 'app/components/About.jsx',
+      TodoList: 'app/components/TodoList.jsx',
+      Todo: 'app/components/Todo.jsx',
 
       applicationStyles: 'app/styles/app.scss'
     },

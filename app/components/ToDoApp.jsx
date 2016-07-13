@@ -48,7 +48,7 @@ handleSearch: function (showCompleted, searchText) {
         <TodoSearch onSearch={this.handleSearch}/>
         <TodoList todos={todos}/>
         <AddTodo onAddTodo={this.handleAddTodo}/>
-
+        {/* Some comment here */}
       </div>
 
 

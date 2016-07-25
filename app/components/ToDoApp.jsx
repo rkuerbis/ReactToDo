@@ -68,12 +68,13 @@ handleSearch: function (showCompleted, searchText) {
     return (
       <div>
         <h1 className="text-center page-title">TodoApp</h1>
-        <TodoSearch onSearch={this.handleSearch}/>
-        <TodoList todos={filteredTodos} onToggle={this.handleToggle}/>
-        <AddTodo onAddTodo={this.handleAddTodo}/>
-        {/* Some comment here */}
+        <div className="container">
+          <TodoSearch onSearch={this.handleSearch}/>
+          <TodoList todos={filteredTodos} onToggle={this.handleToggle}/>
+          <AddTodo onAddTodo={this.handleAddTodo}/>
+          {/* Some comment here */}
+        </div>
       </div>
-
     )
   }
 });
